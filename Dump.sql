@@ -31,6 +31,8 @@ CREATE TABLE `comments` (
   PRIMARY KEY (`id`)
 ) ENGINE=InnoDB AUTO_INCREMENT=4 DEFAULT CHARSET=utf8;
 
+ALTER TABLE `comments` ADD FOREIGN KEY (`news_id`) REFERENCES `news`(`id`) ON DELETE CASCADE;
+
 INSERT INTO `comments` (`text`, `news_id`, `user_id`, `level`, `parent_id`)
 VALUES
 	('comment 1', 1, 1, 1, 0),
