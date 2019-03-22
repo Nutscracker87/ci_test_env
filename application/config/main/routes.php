@@ -55,7 +55,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 // 	$route['404_override'] = 'main_page/closed';
 // }else{
 
-$route['default_controller'] = 'tests';
+$route['default_controller'] = 'home';
 // $route['tests/get_last_news'] = 'tests/get_last_news';
 $route['404_override'] = 'api/error_404';
 $route['404'] = 'api/error_404';
