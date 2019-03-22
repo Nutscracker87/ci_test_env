@@ -56,12 +56,22 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 // }else{
 
 $route['default_controller'] = 'tests';
+// $route['tests/get_last_news'] = 'tests/get_last_news';
 $route['404_override'] = 'api/error_404';
 $route['404'] = 'api/error_404';
 $route['error'] = 'main_page/error';
 $route['tos'] = 'main_page/tos';
 $route['faq'] = 'main_page/faq';
 $route['top'] = 'main_page/top';
+
+$route['news/(:num)'] = 'news/post/$1';
+$route['news/(:num)/like'] = 'news/like/$1';
+$route['news/(:num)/unlike'] = 'news/unlike/$1';
+
+$route['comments/delete/(:num)'] = 'comments/delete/$1';
+
+$route['comments/(:num)/like'] = 'comments/like/$1';
+$route['comments/(:num)/unlike'] = 'comments/unlike/$1';
 
 $route['ref(:any)'] = 'partner/bestref/$1';
 

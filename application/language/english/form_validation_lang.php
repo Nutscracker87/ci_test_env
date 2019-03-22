@@ -66,3 +66,8 @@ $lang['form_validation_greater_than']		= '{field} must contain a number greater 
 $lang['form_validation_greater_than_equal_to']	= '{field} must contain a number greater than or equal to {param}.';
 $lang['form_validation_error_message_not_set']	= 'Unable to access an error message corresponding to your {field}.';
 $lang['form_validation_in_list']		= '{field}  must be one of: {param}.';
+$lang['form_validation_exist'] = 'The {field} field is not exists.';
+$lang['form_validation_parent_available'] = 'The {field} field has wrong value.';
+$lang['form_validation_three_levels_max_tree_depth'] = 'Error. Max tree depth level is 3!';
+
+
