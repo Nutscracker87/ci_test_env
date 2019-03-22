@@ -50,13 +50,19 @@ Vue.js
 Лайкнуть комментарий и отменить
 
 get: /news                    все новости
+
 get: /news/all                все новости
+
 get: /news/latest             последние 3 новости
+
 get: /news/{id}               новость {id}
+
 get: /news/{id}/like          лайкнуть новость {id}
+
 get: /news/{id}/unlike        убрать лайк с новости {id}
 
 post: /comments/create        создать комментарий
+
 {
    parent_id:integer
    text:comment text
@@ -64,7 +70,9 @@ post: /comments/create        создать комментарий
 }
 
 get: /comments/delete/{id}     удалить комментарий {id}
+
 get: /comments/{id}/like       лайкнуть комментарий {id}
+
 get: /comments/{id}/unlike     убрать лайк комментария {id}
 
 ____________
